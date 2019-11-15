@@ -1,7 +1,14 @@
-<h1>US Energy Consumption</h1>
+<h1>US Energy Consumption Study</h1>
 
 
-<h3>Research focus</h3>
+<h3>Questions:
+  <ul>
+  <li>1. Will temperture impact </li>
+  <li>2. </li>
+    <li></li>
+    <li></li>
+  </ul>
+</h3>
 <br>
 
 <h3>Machine Learning</h3>

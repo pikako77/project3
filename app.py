@@ -44,6 +44,11 @@ def dashboard():
     
     return render_template("dashboard.html")
 
+@app.route("/machinelearning")
+def machinelearning():
+    
+    return render_template("machinelearning.html")
+
 @app.route("/future")
 def future():
     
@@ -83,9 +88,6 @@ def petroleum():
 def renewable():
     
     return render_template("indexBarRenewable.html")   
-
-
-
 
 @app.route("/data")
 def get_data():
@@ -219,5 +221,5 @@ def select_energyType_per_state_year(state,yr):
     return jsonify(selected_data)
 
 if __name__ == "__main__":
-    # app.run(port=5015, debug=True)
-    app.run()
+    app.run(port=5002, debug=True)
+    # app.run()

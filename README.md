@@ -5,7 +5,7 @@
   <ul>
   <li>How does population afffect energy consumption? </li>
   <li>Energy Consumption and Average Price by Sector and State in US</li>
-    <li></li>
+  <li>Gas Consumption prediction as a function of Temperature or Coal</li>
     <li></li>
   </ul>
 </h3>

@@ -1,6 +1,9 @@
 <h1>US Energy Consumption Analysis</h1>
 
 
+<h2>Project Goal and Purpose:
+
+</h3>
 <h3>Questions:
   <ul>
   <li>Gas Consumption prediction as a function of Temperature or Coal</li>  

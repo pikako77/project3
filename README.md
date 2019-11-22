@@ -13,7 +13,7 @@
 <br>
 <h3>Data Visualization</h3>
 
-![image](https://user-images.githubusercontent.com/47082843/69404262-79826980-0cc2-11ea-8a38-206e16afd95f.png)
+![image](https://user-images.githubusercontent.com/20781662/69467279-e4788280-0d4c-11ea-9b05-0d8037be3524.png)
 
 ![image](https://user-images.githubusercontent.com/20781662/69464683-965f8100-0d44-11ea-9f42-b62d4f814ee5.png)
 

@@ -27,7 +27,7 @@
 
 
 <h5>Team members:
-    Mitsuko Kitazawa
-    Jessie Kuo
+    Mitsuko Kitazawa,
+    Jessie Kuo,
     Mfon Udo-Imeh
 </h5>

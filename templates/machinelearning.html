@@ -47,13 +47,8 @@
 
             <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
                 class="col-md-12 text-center">
-
-
-                <br>
-                <br>
-
-
             </div>
+            <br><br>
 
 
         </div>
@@ -66,45 +61,47 @@
                         <h3><label>Monthly average temperature</label></h3>
                         <div class="col-4">
                             <input class="form-control" type="number" min=0 max=120 name="temperature"
-                                placeholder="temperature">
+                                placeholder="temperature in F">
                         </div>
 
                     </div>
 
                     <input type="submit" value="submit" class="btn btn-default">
                     <br><br><br>
-
+                    <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
+                        class="col-md-12 text-center">
                 </form>
             </div>
         </div>
         <!-- Coal Prediction -->
         <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-                <h4> Predicted coal consumption {{ coal_message }} x 1000 Mcf for {{temperature}} F</h4>
-
+            <div class="col-md-offset-2 col-md-12">
+                <h4>Predicted coal consumption {{ coal_message }} x 1000 Mcf for {{temperature}} F</h4>
+                <h4>Predicted gas consumption {{ natural_gas_message }} x 1000 Mcf for {{temperature}} F</h4>
             </div>
         </div>
-        <!-- Natural Gas Prediction -->
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-                <h4> Predicted gas consumption {{ natural_gas_message }} x 1000 Mcf for {{temperature}} F</h4>
+        <br><br><br><br><br><br>
 
-            </div>
-        </div>
         <!-- Refined Natural Gas Prediction -->
-        <br><br>
         <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-                <h4> Predicted gas consumption using coal prediction {{ natural_gas_refined_message }} x 1000 Mcf</h4>
-
+            <div class="col-md-offset-2 col-md-11">
+                <h4>In order to refine the prediction of the gas consumption for a given temperature,
+                    the predicted coal consumption is input to model using temperature and coal consumption. </h4>
+            </div>
+            <div class="col-md-offset-2 col-md-10">
+                <br>
+                <h4>For {{temperature}} F,</h4>
+                <h4>Predicted gas consumption using coal prediction {{ natural_gas_refined_message }} x 1000 Mcf</h4>
             </div>
         </div>
-        <br><br><br>
+        <br><br>
 
         <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-                <h6> Mcf: the volume of 1,000 cubic feet</h6>
-
+            <div class="col-md-offset-2 col-md-12">
+                <br>
+                <h6>Mcf: the volume of 1,000 cubic feet</h6>
+                <!-- <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-12 text-center"> -->
             </div>
         </div>
 

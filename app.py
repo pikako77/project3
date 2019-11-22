@@ -40,6 +40,7 @@ db ="postgres://xxlseihlmohnre:6667aa7c4ad666c7e6c92755418ff0486278365bde892a02a
 
 ratio = 1000
 
+
 def one_var_prediction(pred_model, temperature):
     data = pd.DataFrame(np.array([[temperature]]))
         
@@ -76,30 +77,34 @@ def dashboard():
 def machinelearning():
     natural_gas_message = ""
     coal_message = ""
+    natural_gas_refined_message=""
+    temperature=""
 
     if request.method == "POST":
-        temperature = float(request.form["temperature"])
+        #temperature = float(request.form["temperature"])
         # natural gas model
         with open(f'MachineLearning/code/model/linear_regression_gas_TempOnly.pickle', "rb") as gas:
             natural_gas_model = pickle.load(gas)
-         
+            temperature = float(request.form["temperature"])
             # data must be converted to df with matching feature names before predict
             natural_gas_message = one_var_prediction(natural_gas_model, temperature)
             
 
         # coal model
-        with open(f'MachineLearning/code/model/linear_regression_coal_TempOnly.pickle', "rb") as coal:
+        with open(f'machinelearning/code/model/linear_regression_coal_temponly.pickle', "rb") as coal:
             coal_model = pickle.load(coal)
-        
-            coal_message = one_var_prediction(coal_model, temperature)
+            temperature1 = float(request.form["temperature"])
+            coal_message = one_var_prediction(coal_model, temperature1)
 
-         # gas model using coal prediction
+        # gas model using coal prediction
         with open(f'MachineLearning/code/model/linear_regression_gas_TempCoal.pickle', "rb") as gas_refine:
             gas_refined_model = pickle.load(gas_refine)
-        
-            natural_gas_refined_message = two_var_prediction(gas_refined_model, temperature, coal_message)           
+            temperature2 = float(request.form["temperature"])
+            natural_gas_refined_message = two_var_prediction(gas_refined_model, temperature2, coal_message)           
+
     
     return render_template("machinelearning.html", natural_gas_message=natural_gas_message, coal_message=coal_message, temperature=temperature, natural_gas_refined_message=natural_gas_refined_message)
+
 
 
 @app.route("/bio")

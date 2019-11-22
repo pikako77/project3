@@ -9,8 +9,13 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
 from flask import Flask, jsonify, render_template
+from flask import redirect, request
 from flask_sqlalchemy import SQLAlchemy
 import json
+
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+import pickle
 
 app = Flask(__name__)
 
@@ -44,10 +49,47 @@ def dashboard():
     
     return render_template("dashboard.html")
 
-@app.route("/machinelearning")
+@app.route("/machinelearning", methods=["GET", "POST"])
 def machinelearning():
+    natural_gas_message = ""
+    coal_message = ""
+
+    if request.method == "POST":
+
+        # natural gas model
+        with open(f'MachineLearning/code/model/linear_regression_gas_TempOnly.pickle', "rb") as gas:
+            natural_gas_model = pickle.load(gas)
+
+            temperature = float(request.form["temperature"])
+
+            # data must be converted to df with matching feature names before predict
+            data = pd.DataFrame(np.array([[temperature]]))
+        
+            polynomial_features= PolynomialFeatures(degree=2)
+            x_poly = polynomial_features.fit_transform(data)
+
+            natural_gas_result = natural_gas_model.predict(x_poly)
+            
+            natural_gas_message = float(natural_gas_result.round(2))
+
+        # coal model
+        with open(f'MachineLearning/code/model/linear_regression_coal_TempOnly.pickle', "rb") as coal:
+            coal_model = pickle.load(coal)
+
+            temperature = float(request.form["temperature"])
+
+            # data must be converted to df with matching feature names before predict
+            data = pd.DataFrame(np.array([[temperature]]))
+        
+            polynomial_features= PolynomialFeatures(degree=2)
+            x_poly = polynomial_features.fit_transform(data)
+
+            coal_result = coal_model.predict(x_poly)
+        
+            coal_message = float(coal_result.round(2))
     
-    return render_template("machinelearning.html")
+    return render_template("machinelearning.html", natural_gas_message=natural_gas_message, coal_message=coal_message)
+
 
 @app.route("/bio")
 def bio():

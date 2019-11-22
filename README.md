@@ -7,8 +7,7 @@
   <li>How does population afffect energy consumption? </li>
   <li>Energy Consumption and Average Price by Sector and State in US</li>
   <li>The Effect of Temperature on Gas Consumption</li>
-    
-    <li></li>
+     <li></li>
   </ul>
 </h3>
 <br>

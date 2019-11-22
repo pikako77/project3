@@ -38,6 +38,29 @@ app = Flask(__name__)
 # db ="sqlite:///db/Alltypes.sqlite"
 db ="postgres://xxlseihlmohnre:6667aa7c4ad666c7e6c92755418ff0486278365bde892a02ab7243afd5ca65ad@ec2-50-19-127-115.compute-1.amazonaws.com:5432/denrnahfu7g51u"
 
+ratio = 1000
+
+def one_var_prediction(pred_model, temperature):
+    data = pd.DataFrame(np.array([[temperature]]))
+        
+    polynomial_features= PolynomialFeatures(degree=2)
+    x_poly = polynomial_features.fit_transform(data)
+
+    result = pred_model.predict(x_poly) / ratio
+            
+    prediction = float(result.round(2))
+    return prediction
+
+def two_var_prediction(pred_model, temperature , coal_consumption):
+    data = pd.DataFrame(np.array([[coal_consumption * ratio,temperature ]]))
+        
+    polynomial_features= PolynomialFeatures(degree=2)
+    x_poly = polynomial_features.fit_transform(data)
+
+    result = pred_model.predict(x_poly) / ratio
+            
+    prediction = float(result.round(2))
+    return prediction
 
 @app.route("/")
 def index():
@@ -55,40 +78,28 @@ def machinelearning():
     coal_message = ""
 
     if request.method == "POST":
-
+        temperature = float(request.form["temperature"])
         # natural gas model
         with open(f'MachineLearning/code/model/linear_regression_gas_TempOnly.pickle', "rb") as gas:
             natural_gas_model = pickle.load(gas)
-
-            temperature = float(request.form["temperature"])
-
+         
             # data must be converted to df with matching feature names before predict
-            data = pd.DataFrame(np.array([[temperature]]))
-        
-            polynomial_features= PolynomialFeatures(degree=2)
-            x_poly = polynomial_features.fit_transform(data)
-
-            natural_gas_result = natural_gas_model.predict(x_poly)
+            natural_gas_message = one_var_prediction(natural_gas_model, temperature)
             
-            natural_gas_message = float(natural_gas_result.round(2))
 
         # coal model
         with open(f'MachineLearning/code/model/linear_regression_coal_TempOnly.pickle', "rb") as coal:
             coal_model = pickle.load(coal)
-
-            temperature = float(request.form["temperature"])
-
-            # data must be converted to df with matching feature names before predict
-            data = pd.DataFrame(np.array([[temperature]]))
         
-            polynomial_features= PolynomialFeatures(degree=2)
-            x_poly = polynomial_features.fit_transform(data)
+            coal_message = one_var_prediction(coal_model, temperature)
 
-            coal_result = coal_model.predict(x_poly)
+         # gas model using coal prediction
+        with open(f'MachineLearning/code/model/linear_regression_gas_TempCoal.pickle', "rb") as gas_refine:
+            gas_refined_model = pickle.load(gas_refine)
         
-            coal_message = float(coal_result.round(2))
+            natural_gas_refined_message = two_var_prediction(gas_refined_model, temperature, coal_message)           
     
-    return render_template("machinelearning.html", natural_gas_message=natural_gas_message, coal_message=coal_message)
+    return render_template("machinelearning.html", natural_gas_message=natural_gas_message, coal_message=coal_message, temperature=temperature, natural_gas_refined_message=natural_gas_refined_message)
 
 
 @app.route("/bio")

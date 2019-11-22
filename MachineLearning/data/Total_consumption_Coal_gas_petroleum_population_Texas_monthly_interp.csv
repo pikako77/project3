@@ -1,4 +1,4 @@
-year,month,Coal,gas,petroleum,Total_source,Total_source_corrected_population,Av Temp,Max Temp,Min Temp,population
+year,month,Coal,gas,petroleum,Total_source,Total_source_corrected_population,Av_Temp,Max_Temp,Min_Temp,population
 2001,Jan,8002.784,147019.775,2583.823,157606.382,0.007408386,43.9,54.3,33.5,21274049.67
 2001,Feb,7220.569,126392.659,486.212,134099.44,0.00629302,51.9,63.5,40.4,21309235.47
 2001,Mar,7610.386,144803.647,257.67,152671.703,0.007152768,53.3,64,42.6,21344421.28

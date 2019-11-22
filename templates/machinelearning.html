@@ -40,62 +40,88 @@
         </div>
     </div>
 
-    <div class="container my-5 py-2">
-        <h2 class="text-center font-weight-bold my-5">Coal Consumption by State</h2>
+    <div class="container my-10 py-2">
+        <div class="container my-10 py-2">
+            <h2 class="text-center font-weight-bold my-5">Prediction of natural gas and coal consumption</h2>
+            <h2 class="text-center font-weight-bold my-5">For Texas</h2>
 
-        <br>
+            <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-12 text-center">
+
+
+                <br>
+                <br>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- Temperature Input Form -->
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <form method="POST" action="/machinelearning" role="form" , name="temperature">
+                    <div class="form-group">
+                        <h3><label>Monthly average temperature</label></h3>
+                        <div class="col-4">
+                            <input class="form-control" type="number" min=0 max=120 name="temperature"
+                                placeholder="temperature">
+                        </div>
+
+                    </div>
+
+                    <input type="submit" value="submit" class="btn btn-default">
+                    <br><br><br>
+
+                </form>
+            </div>
+        </div>
+        <!-- Coal Prediction -->
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <h4> Predicted coal consumption {{ coal_message }} x 1000 Mcf for {{temperature}} F</h4>
+
+            </div>
+        </div>
+        <!-- Natural Gas Prediction -->
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <h4> Predicted gas consumption {{ natural_gas_message }} x 1000 Mcf for {{temperature}} F</h4>
+
+            </div>
+        </div>
+        <!-- Refined Natural Gas Prediction -->
+        <br><br>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <h4> Predicted gas consumption using coal prediction {{ natural_gas_refined_message }} x 1000 Mcf</h4>
+
+            </div>
+        </div>
+        <br><br><br>
+
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <h6> Mcf: the volume of 1,000 cubic feet</h6>
+
+            </div>
+        </div>
 
         <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
             class="col-md-12 text-center">
-
-
-            <br>
-            <br>
-
-
         </div>
+        <!-- AOS -->
+        <script src="../static/js/aos.js"></script>
+        <script>
+            AOS.init({
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+        <script type="text/javascript" src="../static/js/dataBar.js"></script>
+        <script type="text/javascript" src="../static/js/plotsBarCoal.js"></script>
 
-
-    </div>
-
-    <!-- Temperature Input Form -->
-    <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-            <form method="POST" action="/machinelearning" role="form" , name="temperature">
-                <div class="form-group">
-                    <label>Monthly average temperature</label>
-                    <input class="form-control" type="number" name="temperature" placeholder="temperature">
-                </div>
-
-                <input type="submit" value="submit" class="btn btn-default">
-            </form>
-        </div>
-    </div>
-    <!-- Natural Gas Prediction -->
-    <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-            <h1> Predicted gas consumtption {{ natural_gas_message }}</h1>
-        </div>
-    </div>
-    <!-- Coal Prediction -->
-    <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-            <h1> Predicted coal consumtption {{ coal_message }}</h1>
-        </div>
-    </div>
-
-
-    <!-- AOS -->
-    <script src="../static/js/aos.js"></script>
-    <script>
-        AOS.init({
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-    <script type="text/javascript" src="../static/js/dataBar.js"></script>
-    <script type="text/javascript" src="../static/js/plotsBarCoal.js"></script>
-
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 
 </html>

@@ -3,9 +3,11 @@
 
 <h3>Questions:
   <ul>
+  <li>Gas Consumption prediction as a function of Temperature or Coal</li>  
   <li>How does population afffect energy consumption? </li>
   <li>Energy Consumption and Average Price by Sector and State in US</li>
-  <li>Gas Consumption prediction as a function of Temperature or Coal</li>
+  <li>The Effect of Temperature on Gas Consumption</li>
+    
     <li></li>
   </ul>
 </h3>

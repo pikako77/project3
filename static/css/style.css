@@ -43,3 +43,10 @@ body,
   margin: 0;
   margin-bottom: 15px;
 }
+
+.thumbnail{
+  margin: 10;
+  box-sizing: border-box;
+  margin-right: 50px;
+
+}

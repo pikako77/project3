@@ -49,6 +49,21 @@ def machinelearning():
     
     return render_template("machinelearning.html")
 
+@app.route("/bio")
+def bio():
+    
+    return render_template("bio.html")
+
+@app.route("/credits")
+def credits():
+    
+    return render_template("credits.html")
+
+@app.route("/resources")
+def resources():
+    
+    return render_template("resources.html")
+
 @app.route("/future")
 def future():
     

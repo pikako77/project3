@@ -4,7 +4,7 @@
 <h3>Questions:
   <ul>
   <li>How does population afffect energy consumption? </li>
-  <li></li>
+  <li>Energy Consumption and Price in US</li>
     <li></li>
     <li></li>
   </ul>

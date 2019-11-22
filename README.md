@@ -10,6 +10,9 @@
   </ul>
 </h3>
 <br>
+<h3>Data Visualization</h3>
+
+![image](https://user-images.githubusercontent.com/47082843/69404262-79826980-0cc2-11ea-8a38-206e16afd95f.png)
 
 <h3>Machine Learning</h3>
 

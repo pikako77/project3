@@ -1,4 +1,4 @@
-<h1>US Energy Consumption Study</h1>
+<h1>US Energy Consumption Analysis</h1>
 
 
 <h3>Questions:

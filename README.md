@@ -1,13 +1,13 @@
 <h1>US Energy Consumption Analysis</h1>
 
 <h2>Project Goal and Purpose:</h2
-</h4>This project built on the previous Energy Consumption project to continuing on with data analysis of the different types of energy sources in the United States. We took our analysis further and apply predictive analysis using Machine Learning. 
+</h4>This project built on the previous Energy Consumption project to continuing on with data analysis of the different types of energy sources in the United States. We took our analysis further and applied predictive analysis using Machine Learning. 
 In addition we used Tablaeu for more in depth visualization and trend analysis.
 
 We created 3 Machine Learning models using Deep Learning to provide predictive analysis of Gas and Coal consumption using the key parameters of Temperature effect.
 The Tablaeu visualization focused on showing the correlation between the Price of the different energy consumption sources in the residential, industrial and commercial sectors. Visualizations of the price variation for energy consumption across the various US States was created. 
 
-Drilling down further to focus on the state of Texas we created visualizations of the effect of average temperature and population growth on Gas and Coal Consumption 
+Drilling down further to focus on the state of Texas we created visualizations of the effect of average temperature and population growth on Gas and Coal Consumption. Our Machine Learning was also focused on consumption prediction for the state of Texas.
 </h4>
 
 <h3>Questions:

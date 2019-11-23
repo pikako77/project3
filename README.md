@@ -18,7 +18,6 @@ Drilling down further to focus on the state of Texas we created visualizations o
   <li>Population growth and its afffect on energy consumption</li>
   <li>Historical sources of Energy consumption</li>
   <li>The Effect of Temperature on Gas Consumption</li>
-     <li></li>
   </ul>
 </h3>
 <br>

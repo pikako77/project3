@@ -29,6 +29,8 @@ Drilling down further to focus on the state of Texas we created visualizations o
 
 ![image](https://user-images.githubusercontent.com/20781662/69465429-c60f8880-0d46-11ea-8fe4-9b885144a6a7.png)
 
+![image](https://user-images.githubusercontent.com/20781662/69469030-5607ff00-0d54-11ea-8b11-1153d79593da.png)
+
 ![image](https://user-images.githubusercontent.com/20781662/69464683-965f8100-0d44-11ea-9f42-b62d4f814ee5.png)
 
 

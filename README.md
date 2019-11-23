@@ -62,7 +62,6 @@ We analyzed sources of electricity generation from 1950 thru 2018:
 ![image](https://user-images.githubusercontent.com/20781662/69464683-965f8100-0d44-11ea-9f42-b62d4f814ee5.png)
 
 
-
 <h3>Machine Learning</h3>
 We built a machine learning model to predict gas and coal consumption for Texas. <br>
 We studied the correlation of our parameters to determine which variables have

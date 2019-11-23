@@ -93,11 +93,9 @@ consumption</li><br>
 ![workflow](Energy_Source/MachineLearning/Images/Workflow.png)
 
 <h4>Model performance</h4>
-<ul>
-<li>Model 1<br> R2 test = 87%</li>
-<li>Model 2<br> R2 test = 49%</li>
-<li>Model 3<br> R2 test = 89%</li>
-</ul>
+
+![workflow](Energy_Source/MachineLearning/Images/Performance_all.png)
+
 
 <h3>Data Source</h3>
 

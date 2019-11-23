@@ -98,7 +98,7 @@ consumption</li><br>
 
 <h4>User interface to run the model</h4>
 
-![US](Energy_Source/MachineLearning/Images/Model_input.PNG.png)
+![UI](Energy_Source/MachineLearning/Images/Model_input.PNG)
 
 
 ## Requirements

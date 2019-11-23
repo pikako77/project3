@@ -96,8 +96,24 @@ consumption</li><br>
 
 ![Performace](Energy_Source/MachineLearning/Images/Performance_all.png)
 
+<h4>User interface to run the model</h4>
 
-<h3>Data Source</h3>
+![US](Energy_Source/MachineLearning/Images/Model_input.PNG.png)
+
+
+## Requirements
+### Python
+To run the app, you need to install flask, sqlAlchemy, sklearn and pickle.
+<br>
+### How to run
+In terminal, <br>
+``` conda activate PythonData``` <br>
+then start the server by typing ```python app.py```<br>
+Open the web browser and redirect to your server ```http://127.0.0.1:5000/```
+
+### Heroku
+A compiled version of the app can be found on [Heroku](https://www.heroku.com/home) at:
+[https://prediction-gas-rice.herokuapp.com/machinelearning](https://prediction-gas-rice.herokuapp.com/machinelearning)
 
 
 <h5>Team members:

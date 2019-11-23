@@ -39,7 +39,7 @@ We compared energy price in each sector in every state utilizing July 2018 and J
 
 <h5>Average temperature from January thru December and the corresponding price per sector</h5>
 
-We utilized yearly average tempature from 1976 to 2018 and compare the average electricty price in each sector:
+We utilized yearly average temperature from 1976 to 2018 and compare the average electricty price in each sector:
 <li>The energy price remains steady despite average temperature change from month to month. This is because electricity prices are mainly contract based and does not correlates to temperature changes.</li>
 
 ![image](https://user-images.githubusercontent.com/20781662/69465429-c60f8880-0d46-11ea-8fe4-9b885144a6a7.png)

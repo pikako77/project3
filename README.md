@@ -36,7 +36,6 @@ Observation:
 ![image](https://user-images.githubusercontent.com/47082843/69469771-53a7a400-0d58-11ea-8144-c1109fa462f3.png)
 
 
-![image](https://user-images.githubusercontent.com/20781662/69467279-e4788280-0d4c-11ea-9b05-0d8037be3524.png)
 
 ![image](https://user-images.githubusercontent.com/20781662/69468936-ec87f080-0d53-11ea-8bf6-a3d24ccf4c6c.png)
 

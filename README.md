@@ -46,7 +46,7 @@ We utilized yearly average tempature from 1976 to 2018 and compare the average e
 
 ![image](https://user-images.githubusercontent.com/20781662/69465429-c60f8880-0d46-11ea-8fe4-9b885144a6a7.png)
 
-<h3>Source of US electricity generation</h3>
+<h5>Source of US electricity generation</h5>
 
 We analyzed sources of electricity generation from 1950 thru 2018:
 

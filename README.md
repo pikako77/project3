@@ -43,6 +43,14 @@ Historical average electricity price in US by sector:
 
 ![image](https://user-images.githubusercontent.com/20781662/69468936-ec87f080-0d53-11ea-8bf6-a3d24ccf4c6c.png)
 
+
+Average temperature from January thru December and the corresponding price per sector:
+
+We utilized yearly average tempature from 1976 to 2018 and compare the average electricty price in each sector.
+
+Observation:
+The energy price remains steady despite average temperature change from month to month. This is because electricity prices are mainly contract based and does not correlates to temperature changes.
+
 ![image](https://user-images.githubusercontent.com/20781662/69465429-c60f8880-0d46-11ea-8fe4-9b885144a6a7.png)
 
 ![image](https://user-images.githubusercontent.com/20781662/69469030-5607ff00-0d54-11ea-8b11-1153d79593da.png)

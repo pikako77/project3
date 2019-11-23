@@ -83,6 +83,9 @@ We built additional model for gas consumption using temperature and coal consump
 <ul>
 <li>Model 3: Model to predict gas consumption in function of monthly temperature and coal
 consumption</li><br>
+  
+
+![workflow](Energy_Source/MachineLearning/Images/Workflow.png)
 
 <h3>Data Source</h3>
 

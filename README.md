@@ -68,6 +68,22 @@ impact on the gas and coal monthly consumption.
 
 ![heat_map](Energy_Source/MachineLearning/Images/Correlation_heatmap_all.PNG)
 
+Petroleum, year and population are not correlated to gas and coal consumption. <br>
+These parameters are dropped when building our models. <br>
+
+We first focused on the average monthly temperature to build our models. <br>
+<ul>
+<li>Model 1: Model to predict gas consumption in function of monthly temperature</li>
+<li>Model 2: Model to predict coal consumption in function of monthly temperature</li>
+</ul><br>
+
+Good correlation between gas and coal consumptions suggests that coal consumption can be used to
+refine our model.<br>
+We built additional model for gas consumption using temperature and coal consumption.<br>
+<ul>
+<li>Model 3: Model to predict gas consumption in function of monthly temperature and coal
+consumption</li><br>
+
 <h3>Data Source</h3>
 
 

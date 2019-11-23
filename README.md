@@ -36,6 +36,10 @@ Observation:
 ![image](https://user-images.githubusercontent.com/47082843/69469771-53a7a400-0d58-11ea-8144-c1109fa462f3.png)
 
 
+Historical average electricity price in US by sector:
+<li>Electricity price had remained steady until 1970s when we experienced the first and second oil crisis. The electricity price increased more than 200% during the time period across all sectors.</li>
+<li>After the oil crisis in 1970s, prices had been flat until late 2000s when we experienced another price spike. This time during financial crisis.</li>
+<li>Residential electricity price costs almost two times more than industrial consumption.</li>
 
 ![image](https://user-images.githubusercontent.com/20781662/69468936-ec87f080-0d53-11ea-8bf6-a3d24ccf4c6c.png)
 

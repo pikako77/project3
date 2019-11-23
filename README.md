@@ -92,10 +92,6 @@ consumption</li><br>
   
 ![workflow](Energy_Source/MachineLearning/Images/Workflow.png)
 
-<h4>Model performance</h4>
-
-![workflow](Energy_Source/MachineLearning/Images/Performance_all.png)
-
 
 <h3>Data Source</h3>
 

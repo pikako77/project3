@@ -96,7 +96,7 @@ consumption</li><br>
 
 ![Performace](Energy_Source/MachineLearning/Images/Performance_all.png)
 
-<h4>User interface to run the model</h4>
+<h3>User interface to run the model</h3>
 
 ![UI](Energy_Source/MachineLearning/Images/Model_input.PNG)
 

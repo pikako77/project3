@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Machine Learning</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="../static/img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="../static/css/custom.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="../static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="../static/css/aos.css">
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(../static/img/frontpage.jpg)">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <img src="../static/img/logo.png" alt="logo">
+                    </div>
+                    <div class="col-6 align-self-center text-right">
+                        <a href="/" class="text-white lead">Home</a>
+                    </div>
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
+                class="display-3 text-white font-weight-bold my-5">
+                Machine Learning
+                <br>
+            </h1>
+        </div>
+    </div>
+
+    <div class="container my-10 py-2">
+        <div class="container my-10 py-2">
+            <h2 class="text-center font-weight-bold my-5">Prediction of natural gas and coal consumption</h2>
+            <h2 class="text-center font-weight-bold my-5">For Texas</h2>
+
+            <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-12 text-center">
+            </div>
+            <br><br>
+
+
+        </div>
+
+        <div class="row">
+            <div class="container col-md-12 col-md-8">
+                <h5>
+                    We built a machine learning model to predict gas and coal consumption for Texas. <br>
+                    We studied the correlation of our parameters to determine which variables have
+                    impact on the gas and coal monthly consumption.
+                </h5>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container col-md-12 col-md-4">
+
+                <div class="thumbnail">
+                    <!-- <div class="col-8"> -->
+                    <img class="img-responsive" src="../static/img/Correlation_heatmap_all.PNG"
+                        alt="Correlation_heatmap" style="width:60%" align="left" hspace=10 vspace=10>
+
+                    <!-- </div> -->
+                </div>
+
+                <!-- <div class="box_index"> -->
+                <!-- <div class="col-3"> -->
+                <h4>Observations:</h4>
+                <br>
+                <h5>
+                    <ul>
+                        <li>Total source = sum of gas, coal and petroleum consumption</li><br>
+                        <li>Gas and coal consumption have a good correlation with temperature</li><br>
+
+                        <li>Petroleum, year and population are not correlated to gas and coal consumption</li><br>
+                        <li>These parameters are dropped when building our models</li><br>
+                    </ul>
+                </h5>
+                <!-- </div> -->
+
+            </div>
+
+
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="container col-md-12 explanation">
+                <h3>Machine learning building</h3><br><br><br>
+
+                <h5>
+                    Correlation heatmap suggests that gas and coals consumptions are highly correlated to
+                    temperature.<br><br><br>
+                    We first focused on the average monthly temperature to build our models. <br><br>
+                    <ul>
+                        <li>Model 1: Model to predict gas consumption in function of monthly temperature</li><br>
+                        <li>Model 2: Model to predict coal consumption in function of monthly temperature</li>
+                    </ul><br><br>
+
+                    Good correlation between gas and coal consumptions suggests that coal consumption can be used to
+                    refine our model.<br><br>
+                    We built additional model for gas consumption using temperature and coal consumption.<br> <br>
+                    <ul>
+                        <li>Model 3: Model to predict gas consumption in function of monthly temperature and coal
+                            consumption</li><br>
+
+                    </ul><br><br>
+                    Model predictions and raw data are shown below for model 1 and 2: <br><br>
+
+                </h5>
+
+            </div>
+            <!-- <div class="col-md-offset-2 col-md-8"> -->
+
+            <!-- </div> -->
+            <div class="thumbnail">
+                <!-- <div class="col-8"> -->
+                <img class="img-responsive" src="../static/img/Models_temp.png" alt="Models_temp" style="width:90%"
+                    align="left" hspace=10 vspace=10>
+
+                <!-- </div> -->
+            </div><br><br>
+            <div class="col-md-12 col-md-12 explanation">
+                <br><br>
+                <h5>
+                    Model performance for model 1 and 2 are: <br>
+                </h5>
+                <!-- <div class="container thumbnail"> -->
+                <!-- <div class="col-8"> -->
+                <img class="img-responsive" src="../static/img/Models_temp_performance.png" alt="performance"
+                    style="width:80%" align="left" hspace=10 vspace=10>
+                <!-- </div> -->
+            </div>
+        </div>
+
+
+        <br><br>
+        <div class="row">
+            <div class="container col-md-12 explanation">
+                <h5>
+                    Model performance for model 3: <br>
+                </h5>
+                <div class="thumbnail">
+                    <!-- <div class="col-8"> -->
+                    <img class="img-responsive" src="../static/img/Refined_models_performance.png"
+                        alt="refined_performance" style="width:40%" align="left" hspace=10 vspace=10>
+                    <!-- </div> -->
+                </div>
+
+                <div><br><br>
+                    <h5>
+                        Observations:<br><br>
+                        <ul>
+                            <li>Perfomance increase when additional parameters are taken in account</li><br>
+                            <li>Accuracy is high and greater than 89%.
+                            </li><br>
+                        </ul>
+
+                    </h5>
+                </div>
+
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="container col-md-12 explanation">
+                    <h3>Proposed Workflow </h3><br>
+
+                    <h5>
+                        Our models predict gas and coal consumptions using the monthly temperature.<br><br>
+                        Coarse estimates are computed from model 1 and 2. <br><br>
+                        Then, the predicted coal is inputted to model 3 to refine the monthly gas
+                        consumption.<br><br><br>
+                    </h5>
+                    <div class="thumbnail">
+                        <!-- <div class="col-8"> -->
+                        <img class="img-responsive" src="../static/img/Workflow.png" alt="Workflow" style="width:80%"
+                            align="left" hspace=10 vspace=10>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Temperature Input Form -->
+            <br><br>
+            <div class="row">
+                <div class="container col-md-offset-2 col-md-12">
+                    <h3>Consumption prediction using temperature</h3><br><br>
+                    <h5>
+                        Our models are available below.<br><br>
+                        Please enter your input temperature (in F) to estimate the gas and coal consumption for
+                        Texas.<br><br><br>
+                    </h5>
+
+
+                    <form method="POST" action="/machinelearning" role="form" , name="temperature">
+                        <div class="form-group">
+                            <h5><label>Monthly average temperature</label></h5>
+                            <div class="col-4">
+                                <input class="form-control" type="number" min=0 max=120 name="temperature"
+                                    placeholder="Temperature in F">
+                            </div>
+
+                        </div>
+
+                        <input type="submit" value="submit" class="btn btn-default">
+                        <br><br><br>
+                        <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
+                            class="col-md-12 text-center">
+                    </form>
+                </div>
+            </div>
+            <!-- Coal Prediction -->
+            <div class="row">
+                <div class="col-md-offset-2 col-md-12">
+                    <h5>Model 1: Predicted gas consumption {{ natural_gas_message }} x 1000 Mcf for {{temperature}} F.<br><br>
+                        Model 2: Predicted coal consumption {{ coal_message }} x 1000 Mcf for {{temperature}} F.<br><br>
+                        Model 3: Predicted gas consumption using coal prediction {{ natural_gas_refined_message }} x 1000 Mcf.<br><br>
+                    </h5><br><br>
+                    <h6>Mcf: the volume of 1,000 cubic feet</h6>
+                </div>
+            </div>
+            <br>
+
+
+        </div>
+        <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
+            class="col-md-12 text-center">
+        </div>
+        <!-- AOS -->
+        <script src="../static/js/aos.js"></script>
+        <script>
+            AOS.init({
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+        <script type="text/javascript" src="../static/js/dataBar.js"></script>
+        <script type="text/javascript" src="../static/js/plotsBarCoal.js"></script>
+
+        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>

@@ -22,6 +22,7 @@ Drilling down further to focus on the state of Texas we created visualizations o
 </h3>
 <br>
 <h3>Data Visualization</h3>
+<br>
 Average electricity price by sector across US:
 <br>
 We compared energy price in each sector in every state utilizing July 2018 and July 2019 data. 

@@ -29,9 +29,9 @@ We compared energy price in each sector in every state utilizing July 2018 and J
 <br>
 Observation: 
 <br>
-<li>1. Hawaii has the highest energy cost in all sectors compare to any other states. For example, in residential sector, it costs 32.44 cents per kw vs. only 11.51 cents per kw in Texas </li>
-<li>2. Energy costs are distributed evenly acorss sectors in Hawaii. In other words, there's not a significant variance in energy cost among residential, commerical or industrial sector. This is because Hawaii has very limited choice of energy sources. Every energey consumer needs to pay a hefty price to use energy.</li>
-<li>3. Texas is a very business friendly state when it comes to energy price. For example, it costs only 5.81 cents per kw in Texas vs. 15.23 cents per kw in California for industrial sector customers </li>
+<li>Hawaii has the highest energy cost in all sectors compare to any other states. For example, in residential sector, it costs 32.44 cents per kw vs. only 11.51 cents per kw in Texas </li>
+<li>Energy costs are distributed evenly acorss sectors in Hawaii. In other words, there's not a significant variance in energy cost among residential, commerical or industrial sector. This is because Hawaii has very limited choice of energy sources. Every energey consumer needs to pay a hefty price to use energy.</li>
+<li>Texas is a very business friendly state when it comes to energy price. For example, it costs only 5.81 cents per kw in Texas vs. 15.23 cents per kw in California for industrial sector customers </li>
 
 ![image](https://user-images.githubusercontent.com/20781662/69467279-e4788280-0d4c-11ea-9b05-0d8037be3524.png)
 

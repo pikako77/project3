@@ -67,7 +67,7 @@
             <br>
             <br>
             <br>
-            <div class="col-md-12 col-md-4">
+            <div class="container col-md-12 col-md-4">
 
                 <div class="thumbnail">
                     <!-- <div class="col-8"> -->
@@ -98,8 +98,9 @@
         </div>
         <br><br>
         <div class="row">
-            <h3>Machine learning building</h3><br><br><br>
             <div class="container col-md-12 explanation">
+                <h3>Machine learning building</h3><br><br><br>
+
                 <h5>
                     Correlation heatmap suggests that gas and coals consumptions are highly correlated to
                     temperature.<br><br><br>
@@ -132,137 +133,125 @@
 
                 <!-- </div> -->
             </div><br><br>
-            <div class="container col-md-12 explanation">
+            <div class="col-md-12 col-md-12 explanation">
                 <br><br>
                 <h5>
                     Model performance for model 1 and 2 are: <br>
                 </h5>
-                <div class="thumbnail">
-                    <!-- <div class="col-8"> -->
-                    <img class="img-responsive" src="../static/img/Models_temp_performance.png" alt="performance"
-                        style="width:80%" align="left" hspace=10 vspace=10>
-                    <!-- </div> -->
-                </div>
-            </div>
-            <div><br><br>
-                <h5>
-                    Observations:<br><br>
-
-
-                    <ul>
-                        <li>Model 1: Model is performing well. Accuracy is greater than 87%. </li><br>
-                        <li>Model 2: Accuracy is low (48%), although the model and data fit is good. <br>
-                            This is probably due to outliers we didn't remove before building the model.
-                        </li><br>
-                    </ul>
-
-                </h5>
+                <!-- <div class="container thumbnail"> -->
+                <!-- <div class="col-8"> -->
+                <img class="img-responsive" src="../static/img/Models_temp_performance.png" alt="performance"
+                    style="width:80%" align="left" hspace=10 vspace=10>
+                <!-- </div> -->
             </div>
         </div>
+
 
         <br><br>
-        <h5>
-            Model performance for model 3: <br>
-        </h5>
-        <div class="thumbnail">
-            <!-- <div class="col-8"> -->
-            <img class="img-responsive" src="../static/img/Refined_models_performance.png" alt="refined_performance"
-                style="width:41%" align="left" hspace=10 vspace=10>
-            <!-- </div> -->
-        </div>
-        <div><br><br>
-            <h5>
-                Observations:<br><br>
-                <ul>
-                    <li>Perfomance increase when additional parameters are taken in account</li><br>
-                    <li>Accuracy is high and greater than 89%.
-                    </li><br>
-                </ul>
-
-            </h5>
-        </div>
-    </div>
-    <!-- <div class="row">
-            <div class="col-md-12">
-        <h3>Workflow </h3>
-        
-            <h4>
-                test
-            </h4>
-        </div>
-    </div> -->
-
-    <!-- Temperature Input Form -->
-    <br><br>
-    <div class="row">
-            <div class="col-md-offset-2 col-md-12">>
-        <h3>Consumption prediction using temperature</h3>
-        
-
-            <form method="POST" action="/machinelearning" role="form" , name="temperature">
-                <div class="form-group">
-                    <h4><label>Monthly average temperature</label></h4>
-                    <div class="col-4">
-                        <input class="form-control" type="number" min=0 max=120 name="temperature"
-                            placeholder="temperature in F">
-                    </div>
-
+        <div class="row">
+            <div class="container col-md-12 explanation">
+                <h5>
+                    Model performance for model 3: <br>
+                </h5>
+                <div class="thumbnail">
+                    <!-- <div class="col-8"> -->
+                    <img class="img-responsive" src="../static/img/Refined_models_performance.png"
+                        alt="refined_performance" style="width:40%" align="left" hspace=10 vspace=10>
+                    <!-- </div> -->
                 </div>
 
-                <input type="submit" value="submit" class="btn btn-default">
-                <br><br><br>
-                <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
-                    class="col-md-12 text-center">
-            </form>
-        </div>
-    </div>
-    <!-- Coal Prediction -->
-    <div class="row">
-        <div class="col-md-offset-2 col-md-12">
-            <h5>Predicted coal consumption {{ coal_message }} x 1000 Mcf for {{temperature}} F</h5>
-            <h5>Predicted gas consumption {{ natural_gas_message }} x 1000 Mcf for {{temperature}} F</h5>
-        </div>
-    </div>
-    <br><br><br><br><br><br>
+                <div><br><br>
+                    <h5>
+                        Observations:<br><br>
+                        <ul>
+                            <li>Perfomance increase when additional parameters are taken in account</li><br>
+                            <li>Accuracy is high and greater than 89%.
+                            </li><br>
+                        </ul>
 
-    <!-- Refined Natural Gas Prediction -->
-    <div class="row">
-        <div class="col-md-offset-2 col-md-11">
-            <h5>In order to refine the prediction of the gas consumption for a given temperature,
-                the predicted coal consumption is input to model using temperature and coal consumption. </h5>
-        </div>
-        <div class="col-md-offset-2 col-md-10">
+                    </h5>
+                </div>
+
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="container col-md-12 explanation">
+                    <h3>Proposed Workflow </h3><br>
+
+                    <h5>
+                        Our models predict gas and coal consumptions using the monthly temperature.<br><br>
+                        Coarse estimates are computed from model 1 and 2. <br><br>
+                        Then, the predicted coal is inputted to model 3 to refine the monthly gas
+                        consumption.<br><br><br>
+                    </h5>
+                    <div class="thumbnail">
+                        <!-- <div class="col-8"> -->
+                        <img class="img-responsive" src="../static/img/Workflow.png" alt="Workflow" style="width:80%"
+                            align="left" hspace=10 vspace=10>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Temperature Input Form -->
+            <br><br>
+            <div class="row">
+                <div class="container col-md-offset-2 col-md-12">
+                    <h3>Consumption prediction using temperature</h3><br><br>
+                    <h5>
+                        Our models are available below.<br><br>
+                        Please enter your input temperature (in F) to estimate the gas and coal consumption for
+                        Texas.<br><br><br>
+                    </h5>
+
+
+                    <form method="POST" action="/machinelearning" role="form" , name="temperature">
+                        <div class="form-group">
+                            <h5><label>Monthly average temperature</label></h5>
+                            <div class="col-4">
+                                <input class="form-control" type="number" min=0 max=120 name="temperature"
+                                    placeholder="Temperature in F">
+                            </div>
+
+                        </div>
+
+                        <input type="submit" value="submit" class="btn btn-default">
+                        <br><br><br>
+                        <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
+                            class="col-md-12 text-center">
+                    </form>
+                </div>
+            </div>
+            <!-- Coal Prediction -->
+            <div class="row">
+                <div class="col-md-offset-2 col-md-12">
+                    <h5>Model 1: Predicted gas consumption {{ natural_gas_message }} x 1000 Mcf for {{temperature}} F.<br><br>
+                        Model 2: Predicted coal consumption {{ coal_message }} x 1000 Mcf for {{temperature}} F.<br><br>
+                        Model 3: Predicted gas consumption using coal prediction {{ natural_gas_refined_message }} x 1000 Mcf.<br><br>
+                    </h5><br><br>
+                    <h6>Mcf: the volume of 1,000 cubic feet</h6>
+                </div>
+            </div>
             <br>
-            <h5>For {{temperature}} F,</h5>
-            <h5>Predicted gas consumption using coal prediction {{ natural_gas_refined_message }} x 1000 Mcf
-            </h5>
-        </div>
-    </div>
-    <br><br>
 
-    <div class="row">
-        <div class="col-md-offset-2 col-md-12">
-            <br>
-            <h6>Mcf: the volume of 1,000 cubic feet</h6>
-            <!-- <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
-                class="col-md-12 text-center"> -->
-        </div>
-    </div>
-    </div>
-    <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
-        class="col-md-12 text-center">
-    </div>
-    <!-- AOS -->
-    <script src="../static/js/aos.js"></script>
-    <script>
-        AOS.init({
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-    <script type="text/javascript" src="../static/js/dataBar.js"></script>
-    <script type="text/javascript" src="../static/js/plotsBarCoal.js"></script>
 
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-once="true"
+            class="col-md-12 text-center">
+        </div>
+        <!-- AOS -->
+        <script src="../static/js/aos.js"></script>
+        <script>
+            AOS.init({
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+        <script type="text/javascript" src="../static/js/dataBar.js"></script>
+        <script type="text/javascript" src="../static/js/plotsBarCoal.js"></script>
+
+        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 
 </html>

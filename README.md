@@ -33,6 +33,9 @@ Observation:
 <li>Energy costs are distributed evenly acorss sectors in Hawaii. In other words, there's not a significant variance in energy cost among residential, commerical or industrial sector. This is because Hawaii has very limited choice of energy sources. Every energey consumer needs to pay a hefty price to use energy.</li>
 <li>Texas is a very business friendly state when it comes to energy price. For example, it costs only 5.81 cents per kw in Texas vs. 15.23 cents per kw in California for industrial sector customers </li>
 
+![image](https://user-images.githubusercontent.com/47082843/69469771-53a7a400-0d58-11ea-8144-c1109fa462f3.png)
+
+
 ![image](https://user-images.githubusercontent.com/20781662/69467279-e4788280-0d4c-11ea-9b05-0d8037be3524.png)
 
 ![image](https://user-images.githubusercontent.com/20781662/69468936-ec87f080-0d53-11ea-8bf6-a3d24ccf4c6c.png)

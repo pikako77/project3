@@ -23,7 +23,7 @@ Drilling down further to focus on the state of Texas we created visualizations o
 <br>
 <h3>Data Visualization</h3>
 <br>
-<h5>Average electricity price by sector across US:</h5>
+<h5>Average electricity price by sector across US</h5>
 <br>
 We compared energy price in each sector in every state utilizing July 2018 and July 2019 data. 
 <br>
@@ -34,7 +34,7 @@ We compared energy price in each sector in every state utilizing July 2018 and J
 ![image](https://user-images.githubusercontent.com/47082843/69469771-53a7a400-0d58-11ea-8144-c1109fa462f3.png)
 
 
-Historical average electricity price in US by sector:
+<h5>Historical average electricity price in US by sector</h5>
 <li>Electricity price had remained steady until 1970s when we experienced the first and second oil crisis. The electricity price increased more than 200% during the time period across all sectors.</li>
 <li>After the oil crisis in 1970s, prices had been flat until late 2000s when we experienced another price spike. This time during financial crisis.</li>
 <li>Residential electricity price costs almost two times more than industrial consumption.</li>
@@ -42,12 +42,10 @@ Historical average electricity price in US by sector:
 ![image](https://user-images.githubusercontent.com/20781662/69468936-ec87f080-0d53-11ea-8bf6-a3d24ccf4c6c.png)
 
 
-Average temperature from January thru December and the corresponding price per sector:
+<h5>Average temperature from January thru December and the corresponding price per sector</h5>
 
-We utilized yearly average tempature from 1976 to 2018 and compare the average electricty price in each sector.
-
-Observation:
-The energy price remains steady despite average temperature change from month to month. This is because electricity prices are mainly contract based and does not correlates to temperature changes.
+We utilized yearly average tempature from 1976 to 2018 and compare the average electricty price in each sector:
+<li>The energy price remains steady despite average temperature change from month to month. This is because electricity prices are mainly contract based and does not correlates to temperature changes.</li>
 
 ![image](https://user-images.githubusercontent.com/20781662/69465429-c60f8880-0d46-11ea-8fe4-9b885144a6a7.png)
 
